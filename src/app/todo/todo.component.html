@@ -1,0 +1,15 @@
+<div *ngIf="is_edit==false" id= "i" class="item">
+    <p>{{todo.date}} {{todo.name}}</p>
+    <div class="btn-control">
+        <div class="btn-edit" (click)="openEdit()">เเก้ไข </div>
+        <div class="btn-delete" (click)="deleteTodo()">ลบ</div>
+    </div>
+</div>
+
+<div *ngIf="is_edit==true" id="edit-i" class="item">
+    <input type="date" class="text-edit" [(ngModel)]="todo.date">
+    <input type="text" class="text-edit" [(ngModel)]="todo.name">
+    <div class="btn-control">
+        <div class="btn-save" (click)="update()">บันทึก</div>
+    </div>
+</div>

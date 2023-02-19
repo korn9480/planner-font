@@ -1,0 +1,49 @@
+.txt{
+
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(196, 196, 198);
+    outline: none;
+    margin: 0 10px;
+}
+.item{
+    padding: 10px;
+    background: rgb(243, 228, 199);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.btn-control{
+    display: flex;
+}
+.btn-edit{
+    padding: 5px;
+    border-radius: 5px;
+    background: rgb(245, 137, 5);
+    color: black;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.btn-delete{
+    padding: 5px;
+    border-radius: 5px;
+    background: rgb(248, 89, 4);
+    color: black;
+    cursor: pointer;
+}
+.text-edit{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn-save{
+    padding: 5px;
+    border-radius: 5px;
+    background: rgb(248, 183, 4);
+    color: black;
+    cursor: pointer;
+}

@@ -1,13 +1,14 @@
 <div class="card">
   <h3>TODO LIST</h3>
   <div class="form">
-      <input type="date" class="txt" [(ngModel)]="todo.date">
+      <input type="text" placeholder="ว/ด/ป" class="txt" [(ngModel)]="todo.date">
       <input type="text" class="txt" placeholder="your goal" [(ngModel)]="todo.name">
       <button id="btn-add" (click)="addTodo()">Add</button>
   </div>
-  
-  <div *ngFor="let i of todoList;let a = index" id="item-control" class="item-control">
-    <app-todo [todo]="i" (id_delete)="deleteTodo($event)"
-    (id_update)="updateTodo($event)" [id_list]="a"></app-todo>
+  <div class="list-all">
+    <div *ngFor="let i of todoList;let a = index" id="item-control" class="item-control">
+      <app-todo [todo]="i" (id_delete)="deleteTodo($event)"
+      (id_update)="updateTodo($event)" [id_list]="a"></app-todo>
+    </div>
   </div>
 </div>

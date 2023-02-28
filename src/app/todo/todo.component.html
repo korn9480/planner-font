@@ -7,7 +7,7 @@
 </div>
 
 <div *ngIf="is_edit==true" id="edit-i" class="item">
-    <input type="date" class="text-edit" [(ngModel)]="todo.date">
+    <input type="text" placeholder="ว/ด/ป" class="text-edit" [(ngModel)]="todo.date">
     <input type="text" class="text-edit" [(ngModel)]="todo.name">
     <div class="btn-control">
         <div class="btn-save" (click)="update()">บันทึก</div>

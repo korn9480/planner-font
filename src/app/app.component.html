@@ -1,8 +1,8 @@
 <div class="card">
   <h3>TODO LIST</h3>
   <div class="form">
-      <input type="text" placeholder="ว/ด/ป" class="txt" [(ngModel)]="todo.date">
-      <input type="text" class="txt" placeholder="your goal" [(ngModel)]="todo.name">
+      <input type="text" id="date-list" placeholder="ว/ด/ป" class="txt" [(ngModel)]="todo.date">
+      <input type="text" id="name-list" class="txt" placeholder="your goal" [(ngModel)]="todo.name">
       <button id="btn-add" (click)="addTodo()">Add</button>
   </div>
   <div class="list-all">
